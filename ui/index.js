@@ -170,9 +170,7 @@ async function GetBlockAndMakeTree() {
         return
     }
 
-    block = ans.data.msg;
-
-    console.log(block)
+    var block = ans.data.msg;
 
     // parsing json into a tree
     treeData.children.push({name: "Block " + block.blocknum, children: []});
